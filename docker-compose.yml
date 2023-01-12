@@ -1,0 +1,18 @@
+version: '3.6'
+
+services:
+  n8n-custom-node:
+    build:
+      context: .
+      args:
+          N8N_VERSION: 0.210.2
+    ports:
+      - 5678:5678
+    # volumes:
+    #   - c:/dev/DATA/.n8n:/home/node/.n8n
+    #   - c:/dev/DATA:/tmp/data
+    networks:
+      - n8n-network
+networks:
+  n8n-network:
+    driver: bridge
