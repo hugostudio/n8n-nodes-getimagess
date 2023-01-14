@@ -18,12 +18,12 @@ export class GetImageSS implements INodeType {
 		},
 		inputs: ['main'],
 		outputs: ['main'],
-		credentials: [
-			{
-				name: 'getImageSSApi',
-				required: true,
-			},
-		],
+		// credentials: [
+		// 	{
+		// 		name: 'getImageSSApi',
+		// 		required: true,
+		// 	},
+		// ],
 		properties: [
 			// Resources and operations will go here
 			{

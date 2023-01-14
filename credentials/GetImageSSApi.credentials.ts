@@ -5,7 +5,7 @@ import {
 	INodeProperties,
 } from 'n8n-workflow';
 
-export class GetImageSSdApi implements ICredentialType {
+export class GetImageSSApi implements ICredentialType {
 	name = 'getImageSSApi';
 	displayName = 'GetImageSS API';
 	properties: INodeProperties[] = [
@@ -13,6 +13,7 @@ export class GetImageSSdApi implements ICredentialType {
 			displayName: 'API Key',
 			name: 'apiKey',
 			type: 'string',
+			typeOptions: { password: true },
 			default: '',
 		},
 	];
